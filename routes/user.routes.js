@@ -3,7 +3,7 @@ const router = express.Router();
 const { validateUser } = require("../middleware/validate.user.middleware");
 const UserController = require("../controllers/user.controller");
 
-router.post("/created", validateUser, UserController.createUser);
+router.post("/create", validateUser, UserController.createUser);
 
 router.get("/", UserController.getAllUsers);
 
